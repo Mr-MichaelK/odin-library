@@ -49,7 +49,7 @@ function displayBook(book) {
         <p class="author">by ${book.authorName}</p>
         <p class="pagenumber">Page Count: ${book.pageCount}</p>
         <button class="read">${book.isRead ? 'Read' : 'Unread'}</button>
-        <button class="remove">'Remove'</button>
+        <button class="remove">Remove</button>
     `;
     
     const readButton = bookCard.querySelector(".read");
