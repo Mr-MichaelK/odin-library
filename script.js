@@ -6,11 +6,12 @@ const addBookButton   = document.querySelector(".add");
 const form            = document.querySelector("form");
 const grid            = document.querySelector(".grid");
 
-addBookButton.addEventListener("click", (event) => {
-    
-    addBookToLibrary();
-    let book = library[library.length - 1];
-    displayBook(book);
+addBookButton.addEventListener("click", () => {
+    if (bookNameInput.value && authorNameInput.value && pageCountInput.value) {
+        addBookToLibrary();
+        let book = library[library.length - 1];
+        displayBook(book);
+    }
 });
 
 const library = [];
