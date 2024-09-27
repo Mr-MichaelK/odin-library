@@ -26,7 +26,7 @@ function Book(bookName, authorName, pageCount, isRead) {
 function addBookToLibrary() {
     let bName  = bookNameInput.value;
     let aName  = authorNameInput.value;
-    let pCount = pageCountInput.value;
+    let pCount = Math.floor(pageCountInput.value);
     let isRead = readCheckbox.checked;
     library.push(new Book(bName, aName, pCount, isRead));
 
